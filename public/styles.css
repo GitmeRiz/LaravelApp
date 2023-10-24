@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: #333333;
+}
+
+/* Dark mode styles */
+
+.dark-mode {
+    background-color: #242424;
+    color: #e0e0e0;
+}
+
+.hero-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+    /* Light gray background */
+    color: #333333;
+    flex-direction: column;
+}
+
+.cta-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0099ff;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #0077cc;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.dark-mode .hero-section {
+    background-color: #242424;
+    color: #ffffff;
+}
+
+.dark-mode .cta-button {
+    background-color: #444;
+    color: #ffffff;
+}
+
+.dark-mode .cta-button:hover {
+    background-color: #555;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    transition: 0.4s;
+    border-radius: 34px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+input:checked+.slider:before {
+    transform: translateX(26px);
+}
+
+
+.countdown-container {
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    color: #333333;
+}
+
+.dark-mode .countdown-container {
+    background-color: #121212;
+    color: #ffffff;
+}
