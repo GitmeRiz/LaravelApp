@@ -15,10 +15,10 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('landing');
-});
+})->name('landing');
 
-Route::get('/countdown', function () {
-    return view('countdown');
-})->name('countdown');
+Route::get('/secondpage', function () {
+    return view('secondpage');
+})->name('secondpage');
 ;
 

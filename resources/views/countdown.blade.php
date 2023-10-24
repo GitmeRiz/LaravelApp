@@ -4,7 +4,7 @@
 
 @section('content')
     <div class="countdown-container">
-        <h2>Event Starts In:</h2>
+        <h2>:</h2>
         <div id="countdown">
             <span id="days">00</span> days
             <span id="hours">00</span> hours
@@ -26,7 +26,7 @@
 
                 if (timeDiff < 0) {
                     clearInterval(interval);
-                    document.getElementById('countdown').innerHTML = "Event has started!";
+                    document.getElementById('countdown').innerHTML = "THIS REPO HAS BEEN DELETED!";
                     return;
                 }
                 let days = Math.floor(timeDiff / (1000 * 60 * 60 * 24));
